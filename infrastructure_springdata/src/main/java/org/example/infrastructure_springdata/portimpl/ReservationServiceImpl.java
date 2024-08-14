@@ -11,11 +11,8 @@ import java.util.List;
 @Service
 public class ReservationServiceImpl extends BaseServiceImpl<ReservationEntity, ReservationDTO, Long> implements ReservationPort {
 
-    private final ReservationRepository reservationRepository;
-
     public ReservationServiceImpl(ReservationRepository reservationRepository) {
         super(reservationRepository);
-        this.reservationRepository = reservationRepository;
     }
 
     @Override
