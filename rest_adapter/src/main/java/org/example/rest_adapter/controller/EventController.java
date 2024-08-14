@@ -3,6 +3,7 @@ package org.example.rest_adapter.controller;
 
 import org.example.dto.EventDTO;
 import org.example.service.EventService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,7 +14,7 @@ import java.util.List;
 public class EventController {
 
     private final EventService eventService;
-
+    
     public EventController(EventService eventService) {
         this.eventService = eventService;
     }
